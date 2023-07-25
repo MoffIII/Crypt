@@ -22,9 +22,9 @@ public class Main {
     private static int readInt() {         //Ввод ключа
         //try catch ???
         Scanner sc = new Scanner(System.in);
-        System.out.println("Введите число:");
+        System.out.println(ANSI_RED + "Введите ключ (любое целое число):" + ANSI_RESET);
         int a = sc.nextInt();
-        System.out.println("Введено число:" + a);
+        System.out.println("Введен ключ:" + a);
         return a;
     }
     private static String readString() { // Ввод текста
@@ -37,7 +37,7 @@ public class Main {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        System.out.println("Введен текст: " + ANSI_RED + s + ANSI_RESET);
+        System.out.println("Введен текст для шифровки: " + ANSI_RED + s + ANSI_RESET);
         return s;
     }
     public static int[] cryptText(String string, int key) { // Шифруем текст с ключом
