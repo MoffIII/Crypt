@@ -19,6 +19,7 @@ public class ApplicationRunner {
         String encryptedValue = encrypter.encryptOrDecrypt(encryptKey, toEncrypt, encrypter.encrypt);
         String decryptedValue = encrypter.encryptOrDecrypt(encryptKey, encryptedValue, encrypter.decrypt);
 
+        inputOutput.printData(encryptedValue);
         inputOutput.printData(decryptedValue);
     }
 
